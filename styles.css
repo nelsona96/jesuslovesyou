@@ -1,45 +1,46 @@
+/* Style the body with a gradient background and a serif font */
 body {
-    background-color: #f5f5f5; /* Warm off-white background */
-    font-family: 'Lato', sans-serif; /* Default font for readability */
+    background: linear-gradient(to bottom, #ffffff, #add8e6); /* White to light blue */
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
+/* Center and style the content container */
 .content {
-    max-width: 800px; /* Limits content width for focus */
-    margin: 0 auto; /* Centers the content */
-    padding: 40px; /* Adds generous whitespace */
-    background-color: #ffffff; /* White content area for contrast */
+    max-width: 800px;
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 40px;
+    background-color: #ffffff; /* White background for contrast */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    animation: fadeIn 1s ease-in; /* Smooth fade-in effect on load */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
 }
 
+/* Define the fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/* Style the main heading */
 h1 {
-    font-family: 'Great Vibes', cursive; /* Decorative script font */
-    font-size: 48px; /* Large and prominent */
-    text-align: center; /* Centered for emphasis */
-    color: #800000; /* Deep maroon for warmth and standout */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Subtle shadow for elegance */
-    margin-bottom: 20px; /* Space below heading */
+    font-size: 36px;
+    text-align: center;
+    color: #4b0082; /* Indigo for prominence */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Shadow for emphasis */
 }
 
+/* Style the verse reference */
 h3 {
-    font-family: 'Lato', sans-serif; /* Clean sans-serif font */
-    font-size: 24px; /* Slightly smaller for hierarchy */
-    text-align: center; /* Consistent centering */
-    color: #333333; /* Dark gray for contrast */
-    font-variant: small-caps; /* Small caps for a traditional feel */
-    margin-bottom: 10px; /* Space below subheading */
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+    color: #2f4f4f; /* Dark slate gray for contrast */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Lighter shadow */
 }
 
+/* Style the paragraph (Bible verse) */
 p {
-    font-family: 'Lato', sans-serif; /* Consistent body font */
-    font-size: 18px; /* Readable size */
-    text-align: center; /* Matches overall layout */
-    color: #555555; /* Softer gray for text */
-    line-height: 1.6; /* Increased for readability */
-    font-style: italic; /* Italics for a scriptural tone */
+    font-size: 18px;
+    text-align: center;
+    color: #333333; /* Dark gray for readability */
+    font-style: italic; /* Italic to denote a quote */
 }
