@@ -29,7 +29,7 @@ h1 {
 }
 
 /* Style the verse reference */
-h3 {
+a {
     font-size: 24px;
     text-align: center;
     font-style: italic;
