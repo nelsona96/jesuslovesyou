@@ -17,6 +17,7 @@ h1 {
   text-decoration: none;
   text-align: center;
   cursor: grab;
+  user-select: none;
   animation: pulse 1200ms infinite ease-in-out;
 }
 
