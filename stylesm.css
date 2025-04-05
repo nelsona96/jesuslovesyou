@@ -20,6 +20,13 @@ h1 {
   animation: pulse 1200ms infinite ease-in-out;
 }
 
+h1:active {
+  cursor: grabbing;
+  user-select: none;
+  animation: none;
+  transform: scale(1.07);
+}
+
 body {
   position: center;
 }
