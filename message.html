@@ -49,6 +49,14 @@
         },
         { passive: false }
       );
+
+      // Add vibration to the div inside main
+      const vibrateDiv = document.querySelector("main div");
+      vibrateDiv.addEventListener("touchstart", function (event) {
+        if ("vibrate" in navigator) {
+          navigator.vibrate(100); // Vibrate for 100ms when div is touched
+        }
+      });
     </script>
   </body>
 </html>
