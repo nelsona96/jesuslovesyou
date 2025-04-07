@@ -40,6 +40,15 @@
         },
         { passive: false }
       );
+
+      // Block context menu on long press
+      document.addEventListener(
+        "contextmenu",
+        function (event) {
+          event.preventDefault();
+        },
+        { passive: false }
+      );
     </script>
   </body>
 </html>
