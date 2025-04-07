@@ -12,12 +12,39 @@
   </head>
   <body>
     <nav>
-      <a href="https://nelsona96.github.io/jesuslovesyou/">←</a>
+      <a href="https://nelsona96.github.io/jesuslovesyou/">⟵</a>
     </nav>
     <main>
-      <div class="box">
+      <div>
         <h1>JESUS LOVES YOU!!!</h1>
       </div>
     </main>
+    <script>
+      document.addEventListener(
+        "touchmove",
+        function (event) {
+          if (event.scale !== 1) {
+            event.preventDefault();
+          }
+        },
+        { passive: false }
+      );
+
+      document.addEventListener(
+        "dblclick",
+        function (event) {
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+
+      document.addEventListener(
+        "touchstart",
+        function (event) {
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+    </script>
   </body>
 </html>

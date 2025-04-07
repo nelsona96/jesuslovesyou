@@ -14,5 +14,32 @@
     <div class="button-container">
       <a href="message.html" class="button">Press Button</a>
     </div>
+    <script>
+      document.addEventListener(
+        "touchmove",
+        function (event) {
+          if (event.scale !== 1) {
+            event.preventDefault();
+          }
+        },
+        { passive: false }
+      );
+
+      document.addEventListener(
+        "dblclick",
+        function (event) {
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+
+      document.addEventListener(
+        "touchstart",
+        function (event) {
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+    </script>
   </body>
 </html>
