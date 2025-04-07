@@ -15,26 +15,21 @@
       <a href="message.html" class="button">Press Button</a>
     </div>
     <script>
+      // Block pinch zoom (multi-touch)
       document.addEventListener(
         "touchmove",
         function (event) {
-          if (event.scale !== 1) {
+          if (event.touches.length > 1) {
+            // Only prevent if more than one finger (pinch)
             event.preventDefault();
           }
         },
         { passive: false }
       );
 
+      // Block double-tap zoom
       document.addEventListener(
         "dblclick",
-        function (event) {
-          event.preventDefault();
-        },
-        { passive: false }
-      );
-
-      document.addEventListener(
-        "touchstart",
         function (event) {
           event.preventDefault();
         },
